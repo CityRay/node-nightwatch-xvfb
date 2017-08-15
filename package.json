@@ -1,0 +1,21 @@
+{
+  "name": "cslivetest",
+  "version": "1.0.1",
+  "description": "Start CSLive End2end Test",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-nightwatch": "./node_modules/.bin/nightwatch",
+    "test-hightwatch-chromeless": "./node_modules/.bin/nightwatch --config nightwatch_less.conf.js --test tests/end2end/test-cases/nightwatch2.js",
+    "test-hightwatch-firefoxless": "./node_modules/.bin/nightwatch -e firefox --config nightwatch_less.conf.js --test tests/end2end/test-cases/nightwatch2.js",
+    "start-headless": "xvfb-run ./node_modules/.bin/nightwatch",
+    "start": "node app.js"
+  },
+  "author": "Ray Lin <ray102467@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "casual": "^1.5.14",
+    "nightwatchjs-end2end": "^1.1.2",
+    "node-schedule": "^1.2.3"
+  }
+}
