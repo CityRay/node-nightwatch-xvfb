@@ -16,7 +16,5 @@ $npm run start-headless
 
 #### Second run
 ```
-$npm run start-headless
-```
 $npm run test-hightwatch-chromeless
 ```
